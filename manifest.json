@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-education-lms",
+  "version": "1.0.0",
+  "description": "Education & Course Builder — Canvas/Moodle/Teachable integration for adaptive learning, quizzes, grading",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-education-lms",
+  "homepage": "https://cortexprism.io/marketplace/plugins/education-lms",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "edu_create_quiz",
+      "description": "Generate quiz from course material",
+      "params": []
+    },
+    { "name": "edu_grade_assignment", "description": "Grade assignment with rubric", "params": [] },
+    {
+      "name": "edu_identify_struggling",
+      "description": "Identify students needing help",
+      "params": []
+    },
+    {
+      "name": "edu_generate_content",
+      "description": "Generate course content and lessons",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
