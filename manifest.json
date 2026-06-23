@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-education-lms",
-  "version": "1.0.0",
-  "description": "Education & Course Builder — Canvas/Moodle/Teachable integration for adaptive learning, quizzes, grading",
+  "version": "1.0.1",
+  "description": "Education & Course Builder \u2014 Canvas/Moodle/Teachable integration for adaptive learning, quizzes, grading",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-education-lms",
   "homepage": "https://cortexprism.io/marketplace/plugins/education-lms",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "edu_create_quiz",
       "description": "Generate quiz from course material",
       "params": []
     },
-    { "name": "edu_grade_assignment", "description": "Grade assignment with rubric", "params": [] },
+    {
+      "name": "edu_grade_assignment",
+      "description": "Grade assignment with rubric",
+      "params": []
+    },
     {
       "name": "edu_identify_struggling",
       "description": "Identify students needing help",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
